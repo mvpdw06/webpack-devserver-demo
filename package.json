@@ -1,0 +1,22 @@
+{
+  "name": "webpack-devserver-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --port 9000 --config ./webpack/webpack.config.dev.js",
+    "build": "webpack --config ./webpack/webpack.config.build.js",
+    "build:prod": "cross-env NODE_ENV=production npm run build"
+  },
+  "repository": {
+    "url": "https://github.com/mvpdw06/webpack-devserver-demo.git",
+    "type": "git"
+  },
+  "author": "RyanHsu <mvpdw06@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
